@@ -1,0 +1,9 @@
+opam-version: "1"
+maintainer: "zkincaid@gmail.com"
+build: [
+  [make "rebuild"]
+  [make]
+  [make "opam"]
+]
+remove: [[make "opam_uninstall"]]
+depends: ["ocamlfind" "camlidl" "gmp"]

@@ -1,0 +1,9 @@
+opam-version: "1"
+maintainer: "zkincaid@gmail.com"
+build: [
+  ["python" "scripts/mk_make.py" "--ml"]
+  [make "-C" "build"]
+  ["ocamlfind" "install" "Z3" "build/api/ml/META" "build/api/ml/z3.cma" "build/api/ml/z3.cmxa" "build/api/ml/z3.a" "build/api/ml/z3.cmi" "build/api/ml/z3enums.cmi" "build/api/ml/z3native.cmi" "build/api/ml/libz3ml.a" "build/libz3.so"]
+]
+remove: [["ocamlfind" "remove" "Z3"]]
+depends: ["ocamlfind"]

@@ -1,0 +1,9 @@
+opam-version: "1.2"
+maintainer: "zkincaid@gmail.com"
+homepage: "http://mathsat.fbk.eu/"
+build: [
+  ["sh" "-exc" "cc -c $CFLAGS -I/usr/local/include test.c"]
+]
+depends: [
+  "conf-gmp"
+]

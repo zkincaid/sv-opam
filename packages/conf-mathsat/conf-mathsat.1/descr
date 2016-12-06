@@ -1,0 +1,2 @@
+Virtual package relying on a MathSAT system installation.
+This package can only install if MathSAT is installed on the system.

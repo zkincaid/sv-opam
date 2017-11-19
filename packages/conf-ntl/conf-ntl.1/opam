@@ -1,0 +1,6 @@
+opam-version: "1.2"
+maintainer: "zkincaid@gmail.com"
+homepage: "http://www.shoup.net/ntl/"
+build: [
+  ["sh" "-exc" "g++ -c $CFLAGS test.c"]
+]

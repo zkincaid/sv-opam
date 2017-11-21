@@ -1,0 +1,15 @@
+opam-version: "1.2"
+maintainer: "zkincaid@gmail.com"
+build: [
+  [make]
+]
+install: [
+  [make "install"]
+]
+remove: [
+  [make "uninstall"]
+]
+depends: [
+  "ocamlfind" {build}
+  "conf-ntl"
+]

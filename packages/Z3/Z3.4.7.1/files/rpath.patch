@@ -1,0 +1,14 @@
+index aab4bcb..4fe2f13 100644
+--- a/scripts/mk_util.py
++++ b/scripts/mk_util.py
+@@ -1954,6 +1954,10 @@ class MLComponent(Component):
+                 prefix_lib = '-L' + os.path.abspath(BUILD_DIR).replace('\\', '\\\\')
+             else:
+                 prefix_lib = '-L' + PREFIX + '/lib'
++
++            if IS_LINUX:
++                prefix_lib += ' -cclib -Wl,-rpath,' + PREFIX + '/lib'
++
+             substitutions = { 'LEXTRA': prefix_lib,
+                               'VERSION': "{}.{}.{}.{}".format(VER_MAJOR, VER_MINOR, VER_BUILD, VER_REVISION) }
+

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+maintainer: "zkincaid@gmail.com"
+build: [
+  [make]
+]
+install: [
+  [make "install"]
+]
+remove: [
+  [make "uninstall"]
+]
+depends: [
+  "ocamlfind" {build}
+  "dune" {build}
+  "conf-ntl"
+]
+description: "Number Theory Library"
+synopsis: "Number Theory Library"
+url {
+  src: "https://github.com/zkincaid/ocaml-ntl/archive/v20200321.tar.gz"
+  checksum: "9975d8299d4ee149137b1d5b28238bf8"
+}

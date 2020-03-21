@@ -1,0 +1,21 @@
+opam-version: "2.0"
+maintainer: "John Cyphert <jcyphert@wisc.edu>"
+authors: "John Cyphert <jcyphert@wisc.edu>"
+homepage: "https://github.com/cyphertjohn/OCRS"
+bug-reports: "https://github.com/cyphertjohn/OCRS/issues"
+license: "LGPL"
+build: ["dune" "build"]
+install: ["dune" "install"]
+build-doc: ["dune" "build" "@doc"]
+remove: ["ocamlfind" "remove" "ocrs"]
+depends: [
+  "mlgmpidl"
+  "dune" {build}
+  "ocamlfind" {build}
+]
+synopsis: "Recurrence solver based on operational calculus"
+description: "A package based on Lothar Berg's operational calculus to solve recurrences"
+url {
+  src: "https://github.com/zkincaid/OCRS/archive/v20200321.tar.gz"
+  checksum: "4e6b52102605fa51d0604fedbe3860a0"
+}

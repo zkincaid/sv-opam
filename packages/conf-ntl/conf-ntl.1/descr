@@ -1,2 +1,0 @@
-Virtual package relying on a NTL system installation.
-This package can only install if NTL is installed on the system.

@@ -11,7 +11,11 @@ remove: [
   ["env" "FORCE_PERL_PREFIX=1" "./configure" "--prefix" prefix]
   [make "uninstall"]
 ]
-depends: ["ocamlfind"]
+depends: [
+  "ocamlfind"
+  "ocamlbuild" {build}
+  "num"
+]
 description: "A front-end for the C programming language that facilitates program analysis and transformation"
 url {
   src: "https://github.com/zkincaid/cil/archive/v20200321.tar.gz"

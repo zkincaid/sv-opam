@@ -1,18 +1,21 @@
 opam-version: "2.0"
 maintainer: "zkincaid@gmail.com"
 build: [
-  [make]
+  ["dune" "subst"] {pinned}
+  ["dune" "build" "-p" name "-j" jobs]
+  [ "dune" "runtest" "-p" name "-j" jobs ] {with-test}
 ]
 install: [
-  [make "install"]
+  ["dune" "install"]
 ]
 remove: [
-  [make "uninstall"]
+  ["dune" "uninstall"]
 ]
 depends: [
   "ocamlfind" {build}
   "dune" {build}
   "conf-ntl"
+  "ounit" {with-test}
 ]
 description: "Number Theory Library"
 synopsis: "Number Theory Library"

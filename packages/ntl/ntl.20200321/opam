@@ -15,7 +15,7 @@ depends: [
   "ocamlfind" {build}
   "dune" {build}
   "conf-ntl"
-  "gmp"
+  "mlgmpidl"
   "ounit" {with-test}
 ]
 description: "Number Theory Library"

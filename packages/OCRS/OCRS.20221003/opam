@@ -11,7 +11,7 @@ bug-reports: "github.com/cyphertjohn/OCRS"
 depends: [
   "ocaml"
   "dune" {>= "2.8"}
-  "gmp"
+  "mlgmpidl"
   "odoc" {with-doc}
 ]
 build: [

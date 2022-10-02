@@ -31,3 +31,6 @@ build: [
   ["dune" "install" "-p" name "--create-install-files" name]
 ]
 dev-repo: "git+https://github.com/nclskoh/normalizffi.git"
+url {
+  src: "git+https://github.com/nclskoh/normalizffi.git"
+}

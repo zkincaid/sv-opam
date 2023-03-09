@@ -29,6 +29,6 @@ depends: [
   "hevea" {build & test}
 ]
 url {
-  src:"https://github.com/nclskoh/cil/archive/refs/tags/v20230308.tar.gz"
-  checksum:"md5=7525d8ea022fd50f94b986f99337b48a"
+  src:"https://github.com/nclskoh/cil/archive/refs/tags/v20230309.tar.gz"
+  checksum:"md5=aa2d713722494920cfbc1930682499c0"
 }

@@ -29,5 +29,5 @@ depends: [
   "hevea" {build & test}
 ]
 url {
-  src:"https://github.com/zkincaid/cil#bytes"
+  src:"git+https://github.com/zkincaid/cil#bytes"
 }

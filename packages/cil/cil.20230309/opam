@@ -1,4 +1,4 @@
-opam-version: "1.2"
+opam-version: "2.0"
 authors: ["gabriel@kerneis.info"]
 maintainer: "gabriel@kerneis.info"
 homepage: "https://cil-project.github.io/cil/"
@@ -29,6 +29,5 @@ depends: [
   "hevea" {build & test}
 ]
 url {
-  src:"https://github.com/nclskoh/cil/archive/refs/tags/v20230309.tar.gz"
-  checksum:"md5=aa2d713722494920cfbc1930682499c0"
+  src:"https://github.com/zkincaid/cil#bytes"
 }

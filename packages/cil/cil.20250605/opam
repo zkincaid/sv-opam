@@ -1,0 +1,23 @@
+opam-version: "1"
+maintainer: "gabriel@kerneis.info"
+build: [
+  ["env" "FORCE_PERL_PREFIX=1" "./configure" "--prefix" prefix]
+  [make "cilly"]
+]
+install: [
+  [make "install"]
+]
+remove: [
+  ["env" "FORCE_PERL_PREFIX=1" "./configure" "--prefix" prefix]
+  [make "uninstall"]
+]
+depends: [
+  "ocamlfind"
+  "ocamlbuild" {build}
+  "num"
+]
+description: "A front-end for the C programming language that facilitates program analysis and transformation"
+url {
+  src: "https://github.com/zkincaid/cil/archive/refs/tags/20250605.tar.gz"
+  checksum: "3924caa0b130ede2ec6a3cf93965d7ce"
+}
